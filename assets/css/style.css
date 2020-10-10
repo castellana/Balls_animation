@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    /* height: 100vh; */
+    /* position: relative; porque lo más fácil es si el circulo lo movemos con position absolute */
+}
+article {
+    height: 100vh; /*como hemos unido dos ejercicios en uno, he cambiado la height y position del body al article. Lo mismo para la sección*/
+    position: relative;
+}
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    top: calc(100vh - 100px);
+    left: calc(100% - 100px); /*berechnet mir die ganze breite des Bildschirm minus die Breite von meiner Elemente)*/
+    animation: moveMe1 4s linear infinite;
+}
+
+@keyframes moveMe1 {
+    0%, 100% {
+        top: 0;
+        left: 0;
+        background: red;
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 100px);
+        background: yellow;
+    }
+    50% {
+        top: calc(100vh - 100px);
+        left: calc(100% - 100px);
+        background: green;
+    }
+    75% {
+        top: calc(100vh - 100px);
+        left: 0;
+        background: blue;
+    }
+}
+body {
+    margin: 0;
+    /* height: 100vh; */
+    /* position: relative; */
+}
+section {
+    height: 100vh;
+    position: relative;
+}
+.circles {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: red;
+    position: absolute;
+    animation: moveMe2 4s infinite;
+}
+.c2 {
+    animation-delay: 1s;
+}
+.c3 {
+    animation-delay: 2s;
+}
+.c4 {
+    animation-delay: 3s;
+}
+@keyframes moveMe2 {
+    0%, 100% {
+        top: 0;
+        left: 0;
+        background: red;
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 100px);
+        background: yellow;
+    }
+    50% {
+        top: calc(100vh - 100px);
+        left: calc(100% - 100px);
+        background: green;
+    }
+    75% {
+        top: calc(100vh - 100px);
+        left: 0;
+        background: blue;
+    }
+}
+
+
+
+
+
